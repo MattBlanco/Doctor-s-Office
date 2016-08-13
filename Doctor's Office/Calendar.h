@@ -13,7 +13,7 @@ class Calendar{
 	private:
 		vector<slots> busyDays;
 	public:
-		bool isAvailable(slots day);
+		bool isOpen(slots day);
 		void addSlot(slots day);
 };
 

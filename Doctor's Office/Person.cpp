@@ -37,7 +37,7 @@ string Person::getFullName()
 
 bool Person::isAvailable(slots day)
 {
-	if (schedule.isAvailable(day)) {
+	if (schedule.isOpen(day)) {
 		return true;
 	}
 	else {

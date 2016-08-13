@@ -8,13 +8,12 @@
 
 using namespace std;
 
-void schedule(Patient x, Doctor Dr, slots day) {
+void schedule(Patient& x, Doctor& Dr, slots day) {
 		if (!x.isAvailable(day)) {
-			cout << "Patient is not available";
-			return;
+			cout << "Patient is not available"<< endl;
 		}
 		else if (!Dr.isAvailable(day)) {
-			cout << "Doctor is not available";
+			cout << "Doctor is not availabl" << endl;
 		}
 		else {
 			x.addAppointment(day);
