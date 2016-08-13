@@ -8,12 +8,20 @@
 
 using namespace std;
 
+/********************
+Function: schedule(Patient& x, Doctor& Dr, slots day)
+
+Schedules an appointment only if the patient and doctor are available that day.
+Patient and doctor are both passed by reference so their schedules are affected.
+
+Returns: void
+*********************/
 void schedule(Patient& x, Doctor& Dr, slots day) {
 		if (!x.isAvailable(day)) {
 			cout << "Patient is not available"<< endl;
 		}
 		else if (!Dr.isAvailable(day)) {
-			cout << "Doctor is not availabl" << endl;
+			cout << "Doctor is not available" << endl;
 		}
 		else {
 			x.addAppointment(day);
@@ -21,6 +29,7 @@ void schedule(Patient& x, Doctor& Dr, slots day) {
 		}
 }
 
+//Program is used to create 2 patients and a doctor to test whether the program will not allow you to have 2 appointments on the same day
 int main(void) {
 	Patient P1("Bob", "Bobert", "Bowels");
 	Doctor D1("Doctor", "Hafe", "Butt");
