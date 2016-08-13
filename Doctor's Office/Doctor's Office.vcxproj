@@ -146,6 +146,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Doctor%27s Office\Doctor%27s Office\Calendar.h" />
+    <ClInclude Include="Patient.h" />
+    <ClInclude Include="Doctor.h" />
+    <ClInclude Include="Person.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Doctor%27s Office\Doctor%27s Office\Calendar.cpp" />
+    <ClCompile Include="..\..\Doctor%27s Office\Doctor%27s Office\Doctor.cpp" />
+    <ClCompile Include="Patient.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Person.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
