@@ -1,8 +1,5 @@
 #include "Person.h"
 
-#include <iostream>
-#include <string>
-
 using namespace std;
 
 Person::Person(string firstname, string lastname) {
