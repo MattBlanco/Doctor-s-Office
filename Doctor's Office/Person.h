@@ -12,9 +12,9 @@ class Person {
 	private:
 		string f_name;
 		string l_name;
+		Calendar schedule;
 	public:
 		Person(string f_name, string l_name);
-		Calendar schedule;
 		void setFirstName(string name);
 		void setLastName(string name);
 		string getFirstName();
