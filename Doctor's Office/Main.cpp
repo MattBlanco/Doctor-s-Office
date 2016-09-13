@@ -13,8 +13,8 @@ Patient and doctor are both passed by reference so their schedules are affected.
 
 Returns: void
 *********************/
-void schedule(Patient& x, Doctor& Dr, slots day) {
-		if (!x.isAvailable(day)) {
+void schedule(Patient& P, Doctor& Dr, slots day) {
+		if (!P.isAvailable(day)) {
 			cout << "Patient is not available"<< endl;
 		}
 		else if (!Dr.isAvailable(day)) {
@@ -25,6 +25,7 @@ void schedule(Patient& x, Doctor& Dr, slots day) {
 			Dr.addAppointment(day);
 		}
 }
+
 
 //Program is used to create 2 patients and a doctor to test whether the program will not allow you to have 2 appointments on the same day
 int main(void) {
